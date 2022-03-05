@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-05T18:44:28 IST" name="Suite" finished-at="2022-03-05T18:44:35 IST" duration-ms="6721">
+  <suite started-at="2022-03-05T18:54:24 IST" name="Suite" finished-at="2022-03-05T18:54:30 IST" duration-ms="5884">
     <groups>
     </groups>
-    <test started-at="2022-03-05T18:44:28 IST" name="Test" finished-at="2022-03-05T18:44:35 IST" duration-ms="6721">
+    <test started-at="2022-03-05T18:54:24 IST" name="Test" finished-at="2022-03-05T18:54:30 IST" duration-ms="5884">
       <class name="com.Eme.testcases.HomePageTestCases">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.Eme.testcases.HomePageTestCases@7db12bb6]" started-at="2022-03-05T18:44:28 IST" name="launchBrowser" finished-at="2022-03-05T18:44:34 IST" duration-ms="5667" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.Eme.testcases.HomePageTestCases@7db12bb6]" started-at="2022-03-05T18:54:24 IST" name="launchBrowser" finished-at="2022-03-05T18:54:29 IST" duration-ms="4835" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="logoClickActionTest()[pri:0, instance:com.Eme.testcases.HomePageTestCases@7db12bb6]" started-at="2022-03-05T18:44:34 IST" name="logoClickActionTest" finished-at="2022-03-05T18:44:35 IST" duration-ms="914" status="PASS">
+        <test-method signature="logoClickActionTest()[pri:0, instance:com.Eme.testcases.HomePageTestCases@7db12bb6]" started-at="2022-03-05T18:54:29 IST" name="logoClickActionTest" finished-at="2022-03-05T18:54:30 IST" duration-ms="901" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoClickActionTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.Eme.testcases.HomePageTestCases@7db12bb6]" started-at="2022-03-05T18:44:35 IST" name="closeBrowser" finished-at="2022-03-05T18:44:35 IST" duration-ms="117" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.Eme.testcases.HomePageTestCases@7db12bb6]" started-at="2022-03-05T18:54:30 IST" name="closeBrowser" finished-at="2022-03-05T18:54:30 IST" duration-ms="126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
