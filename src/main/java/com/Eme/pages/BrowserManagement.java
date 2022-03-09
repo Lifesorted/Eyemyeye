@@ -18,7 +18,7 @@ public class BrowserManagement {
 
 	@BeforeMethod
 	public static void launchBrowser() {
-		String browser = "firefox";
+		String browser = "chrome";
 		if (browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
