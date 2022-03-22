@@ -17,6 +17,7 @@ public class HomePage {
 	@FindBy(xpath = "//div[@class=\"logo\"]/child::a")
 	WebElement logo;
 
+	// Logo click test
 	public boolean isLogoClickable() {
 		if (logo.isDisplayed()) {
 			logo.click();
