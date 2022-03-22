@@ -16,6 +16,7 @@ public class BrowserManagement {
 
 	protected static WebDriver driver;
 
+	//browser activity method
 	@BeforeMethod
 	public static void launchBrowser() {
 		String browser = "chrome";
