@@ -41,6 +41,7 @@ public class BrowserManagement {
 		driver.get("https://www.eyemyeye.com");
 	}
 
+	//Quit browser
 	@AfterMethod
 	public static void closeBrowser() {
 		if (driver != null) {
