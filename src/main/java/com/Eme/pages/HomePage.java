@@ -1,5 +1,13 @@
 package com.Eme.pages;
 
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+
+import javax.xml.crypto.Data;
+
+import org.apache.poi.util.SystemOutLogger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -34,6 +42,9 @@ public class HomePage {
 	@FindBy(xpath = "//h6[@class=\"font-size-base mb-4 text-center\"]")
 	WebElement cartcounttext;
 
+	@FindBy(xpath = "//li[@class=\"dropdown_menu\"]")
+	WebElement menuElement;
+	
 	// Logo click test
 	public boolean isLogoClickable() {
 		boolean result= helper.clickElemenetTest(logo);
@@ -60,6 +71,19 @@ public class HomePage {
 			return false;
 		}
 		
+	}
+	
+	public String getElementText() {
+		if (menuElement.isDisplayed()&& menuElement.isEnabled()) {
+			List<WebElement> webElement=driver.findElements(By.xpath("//li[@class=\"dropdown_menu\"]"));
+			String menueleString = "";
+			for(WebElement ele : webElement) {
+			    menueleString+=ele.getText()+"," ;
+			}
+			return menueleString;
+		}
+		
+		return null;
 	}
 
 }

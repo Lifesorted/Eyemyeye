@@ -1,4 +1,7 @@
 package com.Eme.testcases;
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -32,10 +35,21 @@ public class HomePageTestCases extends BrowserManagement {
 		Assert.assertEquals(linkres, true);
 	}
 	
-	@Test(priority = 0,enabled = true)
+	@Test(priority = 0,enabled = false)
 	public void cartCountTest() {
 		boolean linkres = homePage.isCartEmpty();
 		Assert.assertEquals(linkres, true);
 	}
 	
+	@Test(priority = 0,enabled = true)
+	public void menuItemsTest() {
+		String menuit = homePage.getElementText();
+		System.out.println(menuit.toCharArray());
+		if (menuit.contains("EYEGLASSES")) {
+			Assert.assertEquals(menuit, "EYEGLASSES,SUNGLASSES,CONTACT LENSES,COMPUTER GLASSES,READING GLASSES,POWER SUNGLASSES,MORE...,");
+		}else {
+			System.out.println("Menu items are mismatched or something went wrong..");
+		}
+		
+	}
 }
