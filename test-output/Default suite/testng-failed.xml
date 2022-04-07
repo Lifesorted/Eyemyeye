@@ -5,9 +5,8 @@
     <classes>
       <class name="com.Eme.testcases.HomePageTestCases">
         <methods>
-          <include name="helplinkTest"/>
           <include name="closeBrowser"/>
-          <include name="logoClickActionTest"/>
+          <include name="menuItemsTest"/>
           <include name="launchBrowser"/>
           <include name="initializeObjects"/>
         </methods>
