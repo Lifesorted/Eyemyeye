@@ -1,4 +1,4 @@
-package com.Eme.pages;
+ package com.Eme.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,6 +17,7 @@ public class HomePage {
 	@FindBy(xpath = "//div[@class=\"logo\"]/child::a")
 	WebElement logo;
 
+	//logo
 	public boolean isLogoClickable() {
 		if (logo.isDisplayed()) {
 			logo.click();
