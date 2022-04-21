@@ -8,6 +8,7 @@ import javax.xml.crypto.Data;
 
 import org.apache.poi.util.SystemOutLogger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -44,6 +45,15 @@ public class HomePage {
 
 	@FindBy(xpath = "//li[@class=\"dropdown_menu\"]")
 	WebElement menuElement;
+	
+	@FindBy(xpath="//div[@class=\"product-grid\"]/descendant::li")
+	WebElement searchresult;
+	
+	@FindBy(xpath = "//input[@id=\"searchbox\"]")
+	WebElement searchboxElement;
+	
+	@FindBy(id = "sortby")
+	WebElement sortby;
 	
 	// Logo click test
 	public boolean isLogoClickable() {
@@ -85,5 +95,31 @@ public class HomePage {
 		
 		return null;
 	}
+	
+	public int countOfSearchResult() {
+	   if (searchboxElement.isDisplayed()) {
+	           searchboxElement.sendKeys("eyeglass");
+	           searchboxElement.sendKeys(Keys.ENTER);
+	           List<WebElement> prodcount=driver.findElements(By.xpath(("//div[@class=\"product-grid\"]/descendant::li")));
+	           int count=prodcount.size();
+	           return count;
+	}
+		
+		return 0;
+	}
 
+	public String getSortvalues() {
+		   if (searchboxElement.isDisplayed()) {
+		           searchboxElement.sendKeys("eyeglass");
+		           searchboxElement.sendKeys(Keys.ENTER);
+		           List<WebElement> prodcount=driver.findElements(By.id("sortby"));
+		           String sortvalues="";
+		           for (WebElement sortval : prodcount) {
+					sortvalues+=sortval.getText()+",";
+				}
+		        return sortvalues;
+		}
+			
+			return null;
+		}
 }

@@ -7,6 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -16,8 +17,9 @@ public class BrowserManagement {
 
 	//browser activity method
 	@BeforeMethod
-	public static void launchBrowser() {
-		String browser = "chrome";
+	@Parameters("browser")
+	public static void launchBrowser(String browser) {
+		//String browser = "chrome";
 		if (browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();

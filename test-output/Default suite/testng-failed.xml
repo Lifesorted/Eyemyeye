@@ -6,8 +6,8 @@
       <class name="com.Eme.testcases.HomePageTestCases">
         <methods>
           <include name="closeBrowser"/>
-          <include name="menuItemsTest"/>
           <include name="launchBrowser"/>
+          <include name="sortValTest"/>
           <include name="initializeObjects"/>
         </methods>
       </class> <!-- com.Eme.testcases.HomePageTestCases -->

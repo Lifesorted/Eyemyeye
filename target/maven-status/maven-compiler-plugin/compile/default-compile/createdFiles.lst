@@ -1,0 +1,4 @@
+com\Eme\helper\helper.class
+com\Eme\pages\HomePage.class
+com\Eme\pages\LoginPage.class
+com\Eme\pages\BrowserManagement.class
