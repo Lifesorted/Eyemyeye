@@ -1,29 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
+<testng-results ignored="6" total="7" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-07T16:41:29 IST" name="Default suite" finished-at="2022-04-07T16:41:39 IST" duration-ms="9472">
+  <suite started-at="2022-04-21T20:58:17 IST" name="Suite" finished-at="2022-04-21T20:58:34 IST" duration-ms="16869">
     <groups>
     </groups>
-    <test started-at="2022-04-07T16:41:29 IST" name="Default test" finished-at="2022-04-07T16:41:39 IST" duration-ms="9472">
+    <test started-at="2022-04-21T20:58:17 IST" name="Test" finished-at="2022-04-21T20:58:34 IST" duration-ms="16869">
       <class name="com.Eme.testcases.HomePageTestCases">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.Eme.testcases.HomePageTestCases@2d52216b]" started-at="2022-04-07T16:41:29 IST" name="launchBrowser" finished-at="2022-04-07T16:41:38 IST" duration-ms="8669" status="PASS">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.Eme.testcases.HomePageTestCases@60bd273d]" started-at="2022-04-21T20:58:17 IST" name="launchBrowser" finished-at="2022-04-21T20:58:31 IST" duration-ms="13989" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="initializeObjects()[pri:0, instance:com.Eme.testcases.HomePageTestCases@2d52216b]" started-at="2022-04-07T16:41:38 IST" name="initializeObjects" finished-at="2022-04-07T16:41:38 IST" duration-ms="82" status="PASS">
+        <test-method is-config="true" signature="initializeObjects()[pri:0, instance:com.Eme.testcases.HomePageTestCases@60bd273d]" started-at="2022-04-21T20:58:31 IST" name="initializeObjects" finished-at="2022-04-21T20:58:31 IST" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeObjects -->
-        <test-method signature="menuItemsTest()[pri:0, instance:com.Eme.testcases.HomePageTestCases@2d52216b]" started-at="2022-04-07T16:41:38 IST" name="menuItemsTest" finished-at="2022-04-07T16:41:38 IST" duration-ms="368" status="PASS">
+        <test-method signature="sortValTest()[pri:0, instance:com.Eme.testcases.HomePageTestCases@60bd273d]" started-at="2022-04-21T20:58:31 IST" name="sortValTest" finished-at="2022-04-21T20:58:32 IST" duration-ms="1314" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- menuItemsTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.Eme.testcases.HomePageTestCases@2d52216b]" started-at="2022-04-07T16:41:38 IST" name="closeBrowser" finished-at="2022-04-07T16:41:39 IST" duration-ms="299" status="PASS">
+        </test-method> <!-- sortValTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.Eme.testcases.HomePageTestCases@60bd273d]" started-at="2022-04-21T20:58:32 IST" name="closeBrowser" finished-at="2022-04-21T20:58:34 IST" duration-ms="1414" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.Eme.testcases.HomePageTestCases -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

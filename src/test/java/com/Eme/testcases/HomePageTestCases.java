@@ -41,7 +41,7 @@ public class HomePageTestCases extends BrowserManagement {
 		Assert.assertEquals(linkres, true);
 	}
 	
-	@Test(priority = 0,enabled = true)
+	@Test(priority = 0,enabled = false)
 	public void menuItemsTest() {
 		String menuit = homePage.getElementText();
 		System.out.println(menuit.toCharArray());
@@ -51,5 +51,19 @@ public class HomePageTestCases extends BrowserManagement {
 			System.out.println("Menu items are mismatched or something went wrong..");
 		}
 		
+	}
+	
+	@Test(priority = 0,enabled = false)
+	public void searchresCountTest() {
+		int elementcount = homePage.countOfSearchResult();
+		System.out.println(elementcount);
+		Assert.assertEquals(elementcount, 36);
+	}
+	
+	@Test(priority = 0,enabled = true)
+	public void sortValTest() {
+		String elementsort = homePage.getSortvalues();
+		System.out.println(elementsort);
+		//Assert.assertEquals(elementcount, 36);
 	}
 }

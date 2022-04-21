@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="6" total="7" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-04-21T21:01:42 IST" name="Suite" finished-at="2022-04-21T21:01:56 IST" duration-ms="13495">
+    <groups>
+    </groups>
+    <test started-at="2022-04-21T21:01:42 IST" name="Test" finished-at="2022-04-21T21:01:56 IST" duration-ms="13495">
+      <class name="com.Eme.testcases.HomePageTestCases">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.Eme.testcases.HomePageTestCases@3a6bb9bf]" started-at="2022-04-21T21:01:42 IST" name="launchBrowser" finished-at="2022-04-21T21:01:52 IST" duration-ms="9817" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="initializeObjects()[pri:0, instance:com.Eme.testcases.HomePageTestCases@3a6bb9bf]" started-at="2022-04-21T21:01:52 IST" name="initializeObjects" finished-at="2022-04-21T21:01:52 IST" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeObjects -->
+        <test-method signature="sortValTest()[pri:0, instance:com.Eme.testcases.HomePageTestCases@3a6bb9bf]" started-at="2022-04-21T21:01:52 IST" name="sortValTest" finished-at="2022-04-21T21:01:55 IST" duration-ms="2756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortValTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.Eme.testcases.HomePageTestCases@3a6bb9bf]" started-at="2022-04-21T21:01:55 IST" name="closeBrowser" finished-at="2022-04-21T21:01:56 IST" duration-ms="824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.Eme.testcases.HomePageTestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
