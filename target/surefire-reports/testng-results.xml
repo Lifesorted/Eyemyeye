@@ -1,32 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="7" passed="1" failed="0" skipped="0">
+<testng-results ignored="6" total="7" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-21T21:01:42 IST" name="Suite" finished-at="2022-04-21T21:01:56 IST" duration-ms="13495">
+  <suite started-at="2022-05-01T13:17:50 IST" name="Suite" finished-at="2022-05-01T13:18:12 IST" duration-ms="22478">
     <groups>
     </groups>
-    <test started-at="2022-04-21T21:01:42 IST" name="Test" finished-at="2022-04-21T21:01:56 IST" duration-ms="13495">
+    <test started-at="2022-05-01T13:17:50 IST" name="Test" finished-at="2022-05-01T13:18:12 IST" duration-ms="22478">
       <class name="com.Eme.testcases.HomePageTestCases">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.Eme.testcases.HomePageTestCases@3a6bb9bf]" started-at="2022-04-21T21:01:42 IST" name="launchBrowser" finished-at="2022-04-21T21:01:52 IST" duration-ms="9817" status="PASS">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.Eme.testcases.HomePageTestCases@4e096385]" started-at="2022-05-01T13:17:50 IST" name="launchBrowser" finished-at="2022-05-01T13:18:12 IST" duration-ms="22380" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'EMEITLP124', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'EMEITLP124', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:137)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:106)
+at com.Eme.pages.BrowserManagement.launchBrowser(BrowserManagement.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:510)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.NoSuchMethodError: 'com.google.common.collect.ImmutableMap com.google.common.collect.ImmutableMap.of(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)'
+at org.openqa.selenium.chrome.AddHasCasting.getAdditionalCommands(AddHasCasting.java:38)
+at org.openqa.selenium.remote.Dialect.lambda$bindAdditionalCommands$1(Dialect.java:80)
+at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+at org.openqa.selenium.remote.Dialect.bindAdditionalCommands(Dialect.java:79)
+at org.openqa.selenium.remote.Dialect.access$100(Dialect.java:29)
+at org.openqa.selenium.remote.Dialect$2.getCommandCodec(Dialect.java:54)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+... 42 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="initializeObjects()[pri:0, instance:com.Eme.testcases.HomePageTestCases@3a6bb9bf]" started-at="2022-04-21T21:01:52 IST" name="initializeObjects" finished-at="2022-04-21T21:01:52 IST" duration-ms="52" status="PASS">
+        <test-method is-config="true" signature="initializeObjects()[pri:0, instance:com.Eme.testcases.HomePageTestCases@4e096385]" started-at="2022-05-01T13:18:12 IST" name="initializeObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1651391292583" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeObjects -->
-        <test-method signature="sortValTest()[pri:0, instance:com.Eme.testcases.HomePageTestCases@3a6bb9bf]" started-at="2022-04-21T21:01:52 IST" name="sortValTest" finished-at="2022-04-21T21:01:55 IST" duration-ms="2756" status="PASS">
+        <test-method signature="searchresCountTest()[pri:0, instance:com.Eme.testcases.HomePageTestCases@4e096385]" started-at="2022-05-01T13:18:12 IST" name="searchresCountTest" finished-at="2022-05-01T13:18:12 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'EMEITLP124', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'EMEITLP124', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:137)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:106)
+at com.Eme.pages.BrowserManagement.launchBrowser(BrowserManagement.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:510)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.NoSuchMethodError: 'com.google.common.collect.ImmutableMap com.google.common.collect.ImmutableMap.of(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)'
+at org.openqa.selenium.chrome.AddHasCasting.getAdditionalCommands(AddHasCasting.java:38)
+at org.openqa.selenium.remote.Dialect.lambda$bindAdditionalCommands$1(Dialect.java:80)
+at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+at org.openqa.selenium.remote.Dialect.bindAdditionalCommands(Dialect.java:79)
+at org.openqa.selenium.remote.Dialect.access$100(Dialect.java:29)
+at org.openqa.selenium.remote.Dialect$2.getCommandCodec(Dialect.java:54)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+... 42 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sortValTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.Eme.testcases.HomePageTestCases@3a6bb9bf]" started-at="2022-04-21T21:01:55 IST" name="closeBrowser" finished-at="2022-04-21T21:01:56 IST" duration-ms="824" status="PASS">
+        </test-method> <!-- searchresCountTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.Eme.testcases.HomePageTestCases@4e096385]" started-at="2022-05-01T13:18:12 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1651391292586" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

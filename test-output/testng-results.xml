@@ -2,31 +2,31 @@
 <testng-results ignored="6" total="7" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-21T20:58:17 IST" name="Suite" finished-at="2022-04-21T20:58:34 IST" duration-ms="16869">
+  <suite started-at="2022-05-05T21:46:17 IST" name="Suite" finished-at="2022-05-05T21:46:31 IST" duration-ms="13324">
     <groups>
     </groups>
-    <test started-at="2022-04-21T20:58:17 IST" name="Test" finished-at="2022-04-21T20:58:34 IST" duration-ms="16869">
+    <test started-at="2022-05-05T21:46:17 IST" name="Test" finished-at="2022-05-05T21:46:31 IST" duration-ms="13324">
       <class name="com.Eme.testcases.HomePageTestCases">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.Eme.testcases.HomePageTestCases@60bd273d]" started-at="2022-04-21T20:58:17 IST" name="launchBrowser" finished-at="2022-04-21T20:58:31 IST" duration-ms="13989" status="PASS">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.Eme.testcases.HomePageTestCases@7b36aa0c]" started-at="2022-05-05T21:46:17 IST" name="launchBrowser" finished-at="2022-05-05T21:46:26 IST" duration-ms="8923" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="initializeObjects()[pri:0, instance:com.Eme.testcases.HomePageTestCases@60bd273d]" started-at="2022-04-21T20:58:31 IST" name="initializeObjects" finished-at="2022-04-21T20:58:31 IST" duration-ms="95" status="PASS">
+        <test-method is-config="true" signature="initializeObjects()[pri:0, instance:com.Eme.testcases.HomePageTestCases@7b36aa0c]" started-at="2022-05-05T21:46:26 IST" name="initializeObjects" finished-at="2022-05-05T21:46:26 IST" duration-ms="60" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeObjects -->
-        <test-method signature="sortValTest()[pri:0, instance:com.Eme.testcases.HomePageTestCases@60bd273d]" started-at="2022-04-21T20:58:31 IST" name="sortValTest" finished-at="2022-04-21T20:58:32 IST" duration-ms="1314" status="PASS">
+        <test-method signature="searchresCountTest()[pri:0, instance:com.Eme.testcases.HomePageTestCases@7b36aa0c]" started-at="2022-05-05T21:46:26 IST" name="searchresCountTest" finished-at="2022-05-05T21:46:30 IST" duration-ms="3910" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sortValTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.Eme.testcases.HomePageTestCases@60bd273d]" started-at="2022-04-21T20:58:32 IST" name="closeBrowser" finished-at="2022-04-21T20:58:34 IST" duration-ms="1414" status="PASS">
+        </test-method> <!-- searchresCountTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.Eme.testcases.HomePageTestCases@7b36aa0c]" started-at="2022-05-05T21:46:30 IST" name="closeBrowser" finished-at="2022-05-05T21:46:31 IST" duration-ms="368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
