@@ -14,6 +14,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.Eme.helper.DataSlayer;
 import com.Eme.helper.helper;
 
 public class HomePage {
@@ -98,7 +99,7 @@ public class HomePage {
 	
 	public int countOfSearchResult() {
 	   if (searchboxElement.isDisplayed()) {
-	           searchboxElement.sendKeys("eyeglass");
+	           searchboxElement.sendKeys(DataSlayer.getData(0, 0, 0));
 	           searchboxElement.sendKeys(Keys.ENTER);
 	           List<WebElement> prodcount=driver.findElements(By.xpath(("//div[@class=\"product-grid\"]/descendant::li")));
 	           int count=prodcount.size();

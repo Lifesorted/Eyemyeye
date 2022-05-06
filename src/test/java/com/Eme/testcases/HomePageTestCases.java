@@ -53,14 +53,14 @@ public class HomePageTestCases extends BrowserManagement {
 		
 	}
 	
-	@Test(priority = 0,enabled = false)
+	@Test(priority = 0,enabled = true)
 	public void searchresCountTest() {
 		int elementcount = homePage.countOfSearchResult();
 		System.out.println(elementcount);
 		Assert.assertEquals(elementcount, 36);
 	}
 	
-	@Test(priority = 0,enabled = true)
+	@Test(priority = 0,enabled = false)
 	public void sortValTest() {
 		String elementsort = homePage.getSortvalues();
 		System.out.println(elementsort);
