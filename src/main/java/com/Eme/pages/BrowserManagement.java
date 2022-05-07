@@ -39,7 +39,6 @@ public class BrowserManagement {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		driver.get(System.getProperty("url"));
 		driver.get("https://www.eyemyeye.com");
 	}
 
