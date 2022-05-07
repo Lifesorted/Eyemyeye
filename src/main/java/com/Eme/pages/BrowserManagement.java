@@ -17,7 +17,7 @@ public class BrowserManagement {
 
 	//browser activity method
 	@BeforeMethod
-	@Parameters("browser")
+	//@Parameters("browser")
 	public static void launchBrowser(String browser) {
 		//String browser = "chrome";
 		if (browser.equalsIgnoreCase("chrome")) {
