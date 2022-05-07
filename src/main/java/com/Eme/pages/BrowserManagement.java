@@ -19,7 +19,6 @@ public class BrowserManagement {
 	@BeforeMethod
 	//@Parameters("browser")
 	public static void launchBrowser() {
-		//String browser = "chrome";
 		if (System.getProperty("browser").equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
@@ -39,7 +38,7 @@ public class BrowserManagement {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		driver.get("https://www.eyemyeye.com");
+		driver.get(System.getProperty("url"));
 	}
 
 	//Quit browser
