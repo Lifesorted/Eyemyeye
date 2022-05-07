@@ -18,18 +18,18 @@ public class BrowserManagement {
 	//browser activity method
 	@BeforeMethod
 	//@Parameters("browser")
-	public static void launchBrowser(String browser) {
+	public static void launchBrowser() {
 		//String browser = "chrome";
-		if (browser.equalsIgnoreCase("chrome")) {
+		if (System.getProperty("browser").equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
-		} else if (browser.equalsIgnoreCase("firefox")) {
+		} else if (System.getProperty("browser").equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
-		} else if (browser.equalsIgnoreCase("safari")) {
+		} else if (System.getProperty("browser").equalsIgnoreCase("safari")) {
 			WebDriverManager.safaridriver().setup();
 			driver = new SafariDriver();
-		} else if (browser.equalsIgnoreCase("edge")) {
+		} else if (System.getProperty("browser").equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 		} else {
@@ -39,6 +39,7 @@ public class BrowserManagement {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.get(System.getProperty("url"));
 		driver.get("https://www.eyemyeye.com");
 	}
 
