@@ -73,6 +73,7 @@
 					</suiteXmlFiles>
 					<systemPropertyVariables>
 						<executionBrowser>{$browser}</executionBrowser>
+						<appURL>>{$url}</appURL>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
