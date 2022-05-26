@@ -5,17 +5,10 @@
     <classes>
       <class name="com.Eme.testcases.HomePageTestCases">
         <methods>
-          <include name="helplinkTest"/>
           <include name="closeBrowser"/>
-          <include name="menuItemsTest"/>
-          <include name="logoClickActionTest"/>
-          <include name="reportConfig"/>
           <include name="searchresCountTest"/>
           <include name="launchBrowser"/>
-          <include name="cartPresence"/>
           <include name="sortValTest"/>
-          <include name="reportClean"/>
-          <include name="cartCountTest"/>
           <include name="initializeObjects"/>
         </methods>
       </class> <!-- com.Eme.testcases.HomePageTestCases -->
