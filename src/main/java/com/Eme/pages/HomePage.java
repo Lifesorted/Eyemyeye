@@ -11,10 +11,8 @@ import com.Eme.helper.helper;
 
 public class HomePage extends BrowserManagement{
 
-	//public WebDriver driver;
-
-	public HomePage(WebDriver driver) {
-		this.driver = driver;
+	
+	public HomePage() {
 		PageFactory.initElements(driver, this);
 	}
 
@@ -93,7 +91,7 @@ public class HomePage extends BrowserManagement{
 	   if (searchboxElement.isDisplayed()) {
 	           searchboxElement.sendKeys(DataSlayer.getData(0, 0, 0));
 	           searchboxElement.sendKeys(Keys.ENTER);
-	           List<WebElement> prodcount=driver.findElements(By.xpath(("//div[@class=\"product-grid\"]/descendant::li")));
+	           List<WebElement> prodcount=driver.findElements(By.xpath(("//div[@class=\"products-listing-container row\"]/child::div")));
 	           int count=prodcount.size();
 	           return count;
 	}
