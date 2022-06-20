@@ -5,10 +5,9 @@
     <classes>
       <class name="com.Eme.testcases.HomePageTestCases">
         <methods>
+          <include name="validateCartCount"/>
           <include name="closeBrowser"/>
-          <include name="searchresCountTest"/>
           <include name="launchBrowser"/>
-          <include name="sortValTest"/>
           <include name="initializeObjects"/>
         </methods>
       </class> <!-- com.Eme.testcases.HomePageTestCases -->
