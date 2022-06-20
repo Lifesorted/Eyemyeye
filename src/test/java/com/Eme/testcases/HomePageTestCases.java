@@ -55,7 +55,7 @@ public class HomePageTestCases extends BrowserManagement {
 		
 	}
 	
-	@Test(priority = 6,enabled = true)
+	@Test(priority = 6,enabled = false)
 	public void searchresCountTest() {
 		//reports.createTest("searchresCountTest");
 		int elementcount = homePage.countOfSearchResult();
@@ -63,11 +63,18 @@ public class HomePageTestCases extends BrowserManagement {
 		Assert.assertEquals(elementcount, 36);
 	}
 	
-	@Test(priority = 7,enabled = true)
+	@Test(priority = 7,enabled = false)
 	public void sortValTest() {
 		//reports.createTest("sortValTest");
 		String elementsort = homePage.getSortvalues();
 		System.out.println(elementsort);
 		//Assert.assertEquals(elementcount, 36);
+	}
+	
+	@Test(priority = 7,enabled = true)
+	public void validateCartCount() {
+		//reports.createTest("sortValTest");
+		homePage.addProdTocart();
+		
 	}
 }
