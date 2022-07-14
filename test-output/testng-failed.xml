@@ -3,14 +3,14 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="tests" name="Test(failed)">
     <classes>
-      <class name="com.Eme.testcases.HomePageTestCases">
+      <class name="com.Eme.testcases.LoginPageTestCases">
         <methods>
-          <include name="validateCartCount"/>
           <include name="closeBrowser"/>
           <include name="launchBrowser"/>
-          <include name="initializeObjects"/>
+          <include name="initializewebElement"/>
+          <include name="LoginTest_006"/>
         </methods>
-      </class> <!-- com.Eme.testcases.HomePageTestCases -->
+      </class> <!-- com.Eme.testcases.LoginPageTestCases -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

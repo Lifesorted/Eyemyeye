@@ -4,11 +4,12 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.Eme.pages.BrowserManagement;
 import com.Eme.pages.HomePage;
+import com.Eme.pages.LoginPage;
 
 public class HomePageTestCases extends BrowserManagement {
 
 	HomePage homePage;
-	
+		
 	@BeforeMethod
 	public void initializeObjects() {
 		homePage=new HomePage();
@@ -74,7 +75,7 @@ public class HomePageTestCases extends BrowserManagement {
 	@Test(priority = 7,enabled = true)
 	public void validateCartCount() {
 		//reports.createTest("sortValTest");
-		homePage.addProdTocart();
-		
+		//homePage.addEyeGlass();
+		homePage.addSunGlass();
 	}
 }

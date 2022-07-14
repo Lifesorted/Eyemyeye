@@ -4,7 +4,8 @@
   <test thread-count="5" name="Test" parallel="tests">
     <!--<parameter name="browser" value="chrome" /> -->
     <classes>
-      <class name="com.Eme.testcases.HomePageTestCases"/>
+     <!-- <class name="com.Eme.testcases.HomePageTestCases"/> -->
+      <class name="com.Eme.testcases.LoginPageTestCases"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

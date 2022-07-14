@@ -6,6 +6,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -18,6 +19,7 @@ import freemarker.core.ReturnInstruction.Return;
 
 public class HomePage extends BrowserManagement {
 
+	LoginPage loginPage= new LoginPage();
 	public HomePage() {
 		PageFactory.initElements(driver, this);
 	}
@@ -60,6 +62,24 @@ public class HomePage extends BrowserManagement {
 
 	@FindBy(xpath = "//div[@class=\"products-listing-container row\"]/child::div")
 	WebElement elemetsElement;
+
+	@FindBy(xpath = "//li[@id=\"sunglasses_menu\"]/child::a")
+	WebElement sunglass;
+
+	@FindBy(xpath = "//div[@class=\"buttons grid-btn\"]/child::button[@value=\"Buy Frame Only\"]")
+	WebElement addframeonlycta;
+
+	@FindBy(xpath = "//button[@id='S23C3688_0']")
+	WebElement BuyNowCta;
+
+	@FindBy(xpath = "//button[@id=\"btn-proceed-checkout\"]")
+	WebElement proceedbtnElement;
+
+	@FindBy(xpath = "//span[@class=\"prodId\"]")
+	WebElement bredcrumbval;
+
+	@FindBy(xpath = "//button[@class=\"close\"]/child::span")
+	WebElement logincrossbtn;
 
 	// Logo click test
 	public boolean isLogoClickable() {
@@ -130,24 +150,50 @@ public class HomePage extends BrowserManagement {
 		return null;
 	}
 
-	public void addProdTocart() {
-		if (menuElement.isDisplayed() && menuElement.isEnabled()) {
-			eyeglassmenu.click();
-			helper.waitfornextAction(driver, 2000);
-			List<WebElement> prodcount = driver.findElements(By.xpath(("//div[@class=\"owl-item active\"]/descendant::a/child::img")));
-			int i=0;
-			for (WebElement element:prodcount) {
-				
-					element.click();
-				
-			    try {
-					Thread.sleep(1000);
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+	// common method to add product to cart
+	public void addProdTocart(WebElement webelement, WebElement menuelement) {
+		if (menuelement.isDisplayed() && menuelement.isEnabled()) {
+			try {
+				webelement.click();
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+			helper.waitfornextAction(driver, 5000);
+			List<WebElement> elementlist = driver.findElements(By.xpath("//div[@class=\"owl-item active\"]/descendant::a/child::img"));
+			for (WebElement element : elementlist) {
+				helper.waitfornextAction(driver, 3000);
+				try {
+					helper.waitForClick(driver, element, 3000);
+				} catch (StaleElementReferenceException e) {
+					System.out.println(e);
 				}
 			}
+		} else {
+			System.out.println("No Element found");
 		}
+	}
 
+	public void addEyeGlass() {
+		try {
+			addProdTocart(eyeglassmenu, menuElement);
+			helper.waitForClick(driver, addframeonlycta, 3000);
+			helper.waitfornextAction(driver, 3000);
+			proceedbtnElement.click();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void addSunGlass() {
+		try {
+			addProdTocart(sunglassmenu, menuElement);
+			helper.waitForClick(driver, BuyNowCta, 3000);
+			helper.waitfornextAction(driver, 3000);
+			helper.waitForClick(driver, proceedbtnElement, 3000);
+			helper.waitfornextAction(driver, 3000);
+			loginPage.loginByPass("shailendra.k@eyemyeye.com", "test@123");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 }
