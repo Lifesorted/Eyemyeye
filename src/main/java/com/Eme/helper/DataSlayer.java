@@ -35,9 +35,9 @@ public class DataSlayer {
 		return dataString;
 	}
 
-	public static void main(String args[]) {
-		//DataSlayer dSlayer = new DataSlayer();
-		System.out.println(DataSlayer.getData(0, 0, 0));
-	}
+	/*
+	 * public static void main(String args[]) { //DataSlayer dSlayer = new
+	 * DataSlayer(); System.out.println(DataSlayer.getData(1, 0, 1)); }
+	 */
 
 }
