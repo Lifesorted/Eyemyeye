@@ -43,6 +43,7 @@ public class helper extends BrowserManagement {
 		element.click();
 	}
 	
+	//Internet check
 	public static boolean checkInternet() {
 		 try {
 	         URL url = new URL(System.getProperty("url"));
